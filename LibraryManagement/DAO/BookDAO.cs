@@ -27,5 +27,13 @@ namespace LibraryManagement.DAO
 
             return data;
         }
+
+        public DataTable GetListBookByTitle(string title)
+        {
+            string query = String.Format("SELECT Title AS [Tên sách], Author AS [Tác giả], Category AS [Thể loại], ReleaseDate AS [Ngày phát hành], Publisher AS [Nhà xuất bản] FROM dbo.Book WHERE dbo.GetUnsignString(Title) LIKE N'%' + dbo.GetUnsignString(N'{0}') + N'%'", title);
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            return data;
+        }
     }
 }

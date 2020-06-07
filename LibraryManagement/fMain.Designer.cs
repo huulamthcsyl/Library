@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.btnPeople = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnEdit = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnSearch = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnShowSearch = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
@@ -46,7 +46,7 @@
             this.pnlSearch = new Guna.UI.WinForms.GunaPanel();
             this.dtgvBook = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaPanel4 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnSearch = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.txbSearch = new Guna.UI.WinForms.GunaLineTextBox();
             this.pnlPeople = new Guna.UI.WinForms.GunaPanel();
@@ -71,7 +71,7 @@
             this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
             this.gunaPanel1.Controls.Add(this.btnPeople);
             this.gunaPanel1.Controls.Add(this.btnEdit);
-            this.gunaPanel1.Controls.Add(this.btnSearch);
+            this.gunaPanel1.Controls.Add(this.btnShowSearch);
             this.gunaPanel1.Controls.Add(this.gunaPanel2);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
@@ -149,41 +149,41 @@
             this.btnEdit.TabIndex = 2;
             this.btnEdit.Text = "Edit";
             // 
-            // btnSearch
+            // btnShowSearch
             // 
-            this.btnSearch.AnimationHoverSpeed = 0.07F;
-            this.btnSearch.AnimationSpeed = 0.03F;
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
-            this.btnSearch.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
-            this.btnSearch.BorderColor = System.Drawing.Color.Black;
-            this.btnSearch.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnSearch.Checked = true;
-            this.btnSearch.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
-            this.btnSearch.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnSearch.CheckedForeColor = System.Drawing.Color.White;
-            this.btnSearch.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.CheckedImage")));
-            this.btnSearch.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(153)))), ((int)(((byte)(208)))));
-            this.btnSearch.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnSearch.FocusedColor = System.Drawing.Color.Empty;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.ImageOffsetX = 20;
-            this.btnSearch.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnSearch.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
-            this.btnSearch.LineLeft = 5;
-            this.btnSearch.Location = new System.Drawing.Point(0, 85);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(144)))));
-            this.btnSearch.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnSearch.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnSearch.OnHoverImage = null;
-            this.btnSearch.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(144)))));
-            this.btnSearch.OnPressedColor = System.Drawing.Color.Black;
-            this.btnSearch.OnPressedDepth = 0;
-            this.btnSearch.Size = new System.Drawing.Size(200, 50);
-            this.btnSearch.TabIndex = 1;
-            this.btnSearch.Text = "Search";
+            this.btnShowSearch.AnimationHoverSpeed = 0.07F;
+            this.btnShowSearch.AnimationSpeed = 0.03F;
+            this.btnShowSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.btnShowSearch.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.btnShowSearch.BorderColor = System.Drawing.Color.Black;
+            this.btnShowSearch.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnShowSearch.Checked = true;
+            this.btnShowSearch.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
+            this.btnShowSearch.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnShowSearch.CheckedForeColor = System.Drawing.Color.White;
+            this.btnShowSearch.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnShowSearch.CheckedImage")));
+            this.btnShowSearch.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(153)))), ((int)(((byte)(208)))));
+            this.btnShowSearch.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnShowSearch.FocusedColor = System.Drawing.Color.Empty;
+            this.btnShowSearch.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowSearch.ForeColor = System.Drawing.Color.White;
+            this.btnShowSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnShowSearch.Image")));
+            this.btnShowSearch.ImageOffsetX = 20;
+            this.btnShowSearch.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnShowSearch.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
+            this.btnShowSearch.LineLeft = 5;
+            this.btnShowSearch.Location = new System.Drawing.Point(0, 85);
+            this.btnShowSearch.Name = "btnShowSearch";
+            this.btnShowSearch.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(144)))));
+            this.btnShowSearch.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnShowSearch.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnShowSearch.OnHoverImage = null;
+            this.btnShowSearch.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(144)))));
+            this.btnShowSearch.OnPressedColor = System.Drawing.Color.Black;
+            this.btnShowSearch.OnPressedDepth = 0;
+            this.btnShowSearch.Size = new System.Drawing.Size(200, 50);
+            this.btnShowSearch.TabIndex = 1;
+            this.btnShowSearch.Text = "Search";
             // 
             // gunaPanel2
             // 
@@ -297,30 +297,30 @@
             // dtgvBook
             // 
             this.dtgvBook.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtgvBook.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtgvBook.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgvBook.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvBook.BackgroundColor = System.Drawing.Color.White;
             this.dtgvBook.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvBook.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvBook.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtgvBook.ColumnHeadersHeight = 21;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvBook.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvBook.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtgvBook.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dtgvBook.EnableHeadersVisualStyles = false;
             this.dtgvBook.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -358,7 +358,7 @@
             // 
             this.gunaPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(244)))), ((int)(((byte)(237)))));
             this.gunaPanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.gunaPanel4.Controls.Add(this.gunaAdvenceButton1);
+            this.gunaPanel4.Controls.Add(this.btnSearch);
             this.gunaPanel4.Controls.Add(this.gunaPictureBox2);
             this.gunaPanel4.Controls.Add(this.txbSearch);
             this.gunaPanel4.Location = new System.Drawing.Point(141, 20);
@@ -366,39 +366,40 @@
             this.gunaPanel4.Size = new System.Drawing.Size(741, 52);
             this.gunaPanel4.TabIndex = 1;
             // 
-            // gunaAdvenceButton1
+            // btnSearch
             // 
-            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.CheckedImage = null;
-            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.Image = null;
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(610, 9);
-            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
-            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.OnHoverImage = null;
-            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.OnPressedDepth = 0;
-            this.gunaAdvenceButton1.Radius = 10;
-            this.gunaAdvenceButton1.Size = new System.Drawing.Size(114, 34);
-            this.gunaAdvenceButton1.TabIndex = 2;
-            this.gunaAdvenceButton1.Text = "Search";
-            this.gunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSearch.AnimationHoverSpeed = 0.07F;
+            this.btnSearch.AnimationSpeed = 0.03F;
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnSearch.BorderColor = System.Drawing.Color.Black;
+            this.btnSearch.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnSearch.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnSearch.CheckedForeColor = System.Drawing.Color.White;
+            this.btnSearch.CheckedImage = null;
+            this.btnSearch.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnSearch.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSearch.FocusedColor = System.Drawing.Color.Empty;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Image = null;
+            this.btnSearch.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnSearch.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnSearch.Location = new System.Drawing.Point(610, 9);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnSearch.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSearch.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnSearch.OnHoverImage = null;
+            this.btnSearch.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnSearch.OnPressedColor = System.Drawing.Color.Black;
+            this.btnSearch.OnPressedDepth = 0;
+            this.btnSearch.Radius = 10;
+            this.btnSearch.Size = new System.Drawing.Size(114, 34);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // gunaPictureBox2
             // 
@@ -499,7 +500,7 @@
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaAdvenceButton btnSearch;
+        private Guna.UI.WinForms.GunaAdvenceButton btnShowSearch;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaAdvenceButton btnPeople;
         private Guna.UI.WinForms.GunaAdvenceButton btnEdit;
@@ -511,7 +512,7 @@
         private Guna.UI.WinForms.GunaPanel pnlEdit;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaPanel gunaPanel4;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
+        private Guna.UI.WinForms.GunaAdvenceButton btnSearch;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
         private Guna.UI.WinForms.GunaDataGridView dtgvBook;
         private Guna.UI.WinForms.GunaAdvenceButton btnLogout;

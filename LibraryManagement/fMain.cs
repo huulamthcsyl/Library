@@ -27,6 +27,12 @@ namespace LibraryManagement
             dtgvBook.DataSource = BookDAO.Instance.GetListBook();
         }
 
+        void LoadListBookByTitle()
+        {
+            string title = txbSearch.Text;
+            dtgvBook.DataSource = BookDAO.Instance.GetListBookByTitle(title);
+        }
+
         #endregion
 
         #region EVENTS
@@ -42,7 +48,11 @@ namespace LibraryManagement
             this.Close();
         }
 
-        #endregion
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            LoadListBookByTitle();
+        }
 
+        #endregion
     }
 }

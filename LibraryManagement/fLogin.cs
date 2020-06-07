@@ -26,6 +26,8 @@ namespace LibraryManagement
                 fMain f = new fMain();
                 this.Hide();
                 f.ShowDialog();
+                txbPassword.Clear();
+                txbUsername.Clear();
                 this.Show();
             }
             else
