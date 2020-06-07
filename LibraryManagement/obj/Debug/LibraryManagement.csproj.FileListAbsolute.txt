@@ -1,0 +1,14 @@
+E:\C#\WinForm\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe.config
+E:\C#\WinForm\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe
+E:\C#\WinForm\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.pdb
+E:\C#\WinForm\LibraryManagement\LibraryManagement\bin\Debug\Guna.UI.dll
+E:\C#\WinForm\LibraryManagement\LibraryManagement\bin\Debug\Guna.UI2.dll
+E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csprojAssemblyReference.cache
+E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.fLogin.resources
+E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.fMain.resources
+E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.Properties.Resources.resources
+E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.GenerateResource.cache
+E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CoreCompileInputs.cache
+E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CopyComplete
+E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.exe
+E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.pdb
