@@ -12,3 +12,4 @@ E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.cs
 E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CopyComplete
 E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.exe
 E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.pdb
+E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.fAdd.resources

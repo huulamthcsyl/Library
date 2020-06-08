@@ -33,6 +33,13 @@ namespace LibraryManagement
             dtgvBook.DataSource = BookDAO.Instance.GetListBookByTitle(title);
         }
 
+        void LoadAddForm()
+        {
+            fAdd fAdd = new fAdd();
+            fAdd.ShowDialog();
+            LoadListBook();
+        }
+
         #endregion
 
         #region EVENTS
@@ -51,6 +58,11 @@ namespace LibraryManagement
         private void btnSearch_Click(object sender, EventArgs e)
         {
             LoadListBookByTitle();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            LoadAddForm();
         }
 
         #endregion

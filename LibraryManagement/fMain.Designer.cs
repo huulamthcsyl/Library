@@ -53,6 +53,7 @@
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.pnlEdit = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.btnAdd = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
@@ -358,12 +359,13 @@
             // 
             this.gunaPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(244)))), ((int)(((byte)(237)))));
             this.gunaPanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.gunaPanel4.Controls.Add(this.btnAdd);
             this.gunaPanel4.Controls.Add(this.btnSearch);
             this.gunaPanel4.Controls.Add(this.gunaPictureBox2);
             this.gunaPanel4.Controls.Add(this.txbSearch);
-            this.gunaPanel4.Location = new System.Drawing.Point(141, 20);
+            this.gunaPanel4.Location = new System.Drawing.Point(46, 18);
             this.gunaPanel4.Name = "gunaPanel4";
-            this.gunaPanel4.Size = new System.Drawing.Size(741, 52);
+            this.gunaPanel4.Size = new System.Drawing.Size(911, 52);
             this.gunaPanel4.TabIndex = 1;
             // 
             // btnSearch
@@ -385,7 +387,7 @@
             this.btnSearch.Image = null;
             this.btnSearch.ImageSize = new System.Drawing.Size(20, 20);
             this.btnSearch.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnSearch.Location = new System.Drawing.Point(610, 9);
+            this.btnSearch.Location = new System.Drawing.Point(553, 9);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnSearch.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -423,7 +425,7 @@
             this.txbSearch.Name = "txbSearch";
             this.txbSearch.PasswordChar = '\0';
             this.txbSearch.SelectedText = "";
-            this.txbSearch.Size = new System.Drawing.Size(500, 34);
+            this.txbSearch.Size = new System.Drawing.Size(449, 34);
             this.txbSearch.TabIndex = 0;
             // 
             // pnlPeople
@@ -463,6 +465,41 @@
             this.gunaLabel3.Size = new System.Drawing.Size(27, 15);
             this.gunaLabel3.TabIndex = 0;
             this.gunaLabel3.Text = "Edit";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.AnimationHoverSpeed = 0.07F;
+            this.btnAdd.AnimationSpeed = 0.03F;
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnAdd.BorderColor = System.Drawing.Color.Black;
+            this.btnAdd.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnAdd.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnAdd.CheckedForeColor = System.Drawing.Color.White;
+            this.btnAdd.CheckedImage = null;
+            this.btnAdd.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAdd.FocusedColor = System.Drawing.Color.Empty;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Image = null;
+            this.btnAdd.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnAdd.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnAdd.Location = new System.Drawing.Point(689, 9);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnAdd.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAdd.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnAdd.OnHoverImage = null;
+            this.btnAdd.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnAdd.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAdd.OnPressedDepth = 0;
+            this.btnAdd.Radius = 10;
+            this.btnAdd.Size = new System.Drawing.Size(114, 34);
+            this.btnAdd.TabIndex = 3;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // fMain
             // 
@@ -518,5 +555,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnLogout;
         private Guna.UI.WinForms.GunaLineTextBox txbSearch;
         private Guna.UI.WinForms.GunaLabel lbName;
+        private Guna.UI.WinForms.GunaAdvenceButton btnAdd;
     }
 }

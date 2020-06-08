@@ -35,5 +35,11 @@ namespace LibraryManagement.DAO
 
             return data;
         }
+
+        public void AddBook(string title, string author, string category, DateTime releaseDate, string publisher)
+        {
+            string query = "EXEC USP_AddBook @title , @author , @category , @releaseDate , @publisher";
+            DataProvider.Instance.ExcuteNonQuery(query, new object[] { title, author, category, releaseDate, publisher });
+        }
     }
 }
