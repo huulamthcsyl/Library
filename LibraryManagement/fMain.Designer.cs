@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.btnPeople = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnEdit = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnShowSearch = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
@@ -46,14 +45,15 @@
             this.pnlSearch = new Guna.UI.WinForms.GunaPanel();
             this.dtgvBook = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaPanel4 = new Guna.UI.WinForms.GunaPanel();
-            this.btnSearch = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnEditBook = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnAddBook = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnSearchBook = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.txbSearch = new Guna.UI.WinForms.GunaLineTextBox();
             this.pnlPeople = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.pnlEdit = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.btnAdd = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
@@ -71,7 +71,6 @@
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
             this.gunaPanel1.Controls.Add(this.btnPeople);
-            this.gunaPanel1.Controls.Add(this.btnEdit);
             this.gunaPanel1.Controls.Add(this.btnShowSearch);
             this.gunaPanel1.Controls.Add(this.gunaPanel2);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -114,41 +113,6 @@
             this.btnPeople.Size = new System.Drawing.Size(200, 50);
             this.btnPeople.TabIndex = 3;
             this.btnPeople.Text = "People";
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.AnimationHoverSpeed = 0.07F;
-            this.btnEdit.AnimationSpeed = 0.03F;
-            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
-            this.btnEdit.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
-            this.btnEdit.BorderColor = System.Drawing.Color.Black;
-            this.btnEdit.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnEdit.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(114)))));
-            this.btnEdit.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnEdit.CheckedForeColor = System.Drawing.Color.White;
-            this.btnEdit.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.CheckedImage")));
-            this.btnEdit.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(153)))), ((int)(((byte)(208)))));
-            this.btnEdit.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnEdit.FocusedColor = System.Drawing.Color.Empty;
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
-            this.btnEdit.ImageOffsetX = 20;
-            this.btnEdit.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEdit.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(92)))));
-            this.btnEdit.LineLeft = 5;
-            this.btnEdit.Location = new System.Drawing.Point(0, 138);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(144)))));
-            this.btnEdit.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnEdit.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnEdit.OnHoverImage = null;
-            this.btnEdit.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(72)))), ((int)(((byte)(144)))));
-            this.btnEdit.OnPressedColor = System.Drawing.Color.Black;
-            this.btnEdit.OnPressedDepth = 0;
-            this.btnEdit.Size = new System.Drawing.Size(200, 50);
-            this.btnEdit.TabIndex = 2;
-            this.btnEdit.Text = "Edit";
             // 
             // btnShowSearch
             // 
@@ -298,30 +262,30 @@
             // dtgvBook
             // 
             this.dtgvBook.AllowUserToAddRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dtgvBook.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dtgvBook.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgvBook.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvBook.BackgroundColor = System.Drawing.Color.White;
             this.dtgvBook.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgvBook.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgvBook.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvBook.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dtgvBook.ColumnHeadersHeight = 21;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgvBook.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgvBook.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgvBook.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dtgvBook.EnableHeadersVisualStyles = false;
             this.dtgvBook.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -357,10 +321,11 @@
             // 
             // gunaPanel4
             // 
-            this.gunaPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(244)))), ((int)(((byte)(237)))));
+            this.gunaPanel4.BackColor = System.Drawing.Color.White;
             this.gunaPanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.gunaPanel4.Controls.Add(this.btnAdd);
-            this.gunaPanel4.Controls.Add(this.btnSearch);
+            this.gunaPanel4.Controls.Add(this.btnEditBook);
+            this.gunaPanel4.Controls.Add(this.btnAddBook);
+            this.gunaPanel4.Controls.Add(this.btnSearchBook);
             this.gunaPanel4.Controls.Add(this.gunaPictureBox2);
             this.gunaPanel4.Controls.Add(this.txbSearch);
             this.gunaPanel4.Location = new System.Drawing.Point(46, 18);
@@ -368,40 +333,113 @@
             this.gunaPanel4.Size = new System.Drawing.Size(911, 52);
             this.gunaPanel4.TabIndex = 1;
             // 
-            // btnSearch
+            // btnEditBook
             // 
-            this.btnSearch.AnimationHoverSpeed = 0.07F;
-            this.btnSearch.AnimationSpeed = 0.03F;
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnSearch.BorderColor = System.Drawing.Color.Black;
-            this.btnSearch.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnSearch.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnSearch.CheckedForeColor = System.Drawing.Color.White;
-            this.btnSearch.CheckedImage = null;
-            this.btnSearch.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnSearch.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnSearch.FocusedColor = System.Drawing.Color.Empty;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Image = null;
-            this.btnSearch.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnSearch.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnSearch.Location = new System.Drawing.Point(553, 9);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnSearch.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnSearch.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnSearch.OnHoverImage = null;
-            this.btnSearch.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnSearch.OnPressedColor = System.Drawing.Color.Black;
-            this.btnSearch.OnPressedDepth = 0;
-            this.btnSearch.Radius = 10;
-            this.btnSearch.Size = new System.Drawing.Size(114, 34);
-            this.btnSearch.TabIndex = 2;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnEditBook.AnimationHoverSpeed = 0.07F;
+            this.btnEditBook.AnimationSpeed = 0.03F;
+            this.btnEditBook.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditBook.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnEditBook.BorderColor = System.Drawing.Color.Black;
+            this.btnEditBook.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnEditBook.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnEditBook.CheckedForeColor = System.Drawing.Color.White;
+            this.btnEditBook.CheckedImage = null;
+            this.btnEditBook.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnEditBook.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnEditBook.FocusedColor = System.Drawing.Color.Empty;
+            this.btnEditBook.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditBook.ForeColor = System.Drawing.Color.White;
+            this.btnEditBook.Image = ((System.Drawing.Image)(resources.GetObject("btnEditBook.Image")));
+            this.btnEditBook.ImageOffsetX = 5;
+            this.btnEditBook.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnEditBook.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnEditBook.Location = new System.Drawing.Point(807, 9);
+            this.btnEditBook.Name = "btnEditBook";
+            this.btnEditBook.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnEditBook.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnEditBook.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnEditBook.OnHoverImage = null;
+            this.btnEditBook.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnEditBook.OnPressedColor = System.Drawing.Color.Black;
+            this.btnEditBook.OnPressedDepth = 0;
+            this.btnEditBook.Radius = 10;
+            this.btnEditBook.Size = new System.Drawing.Size(99, 34);
+            this.btnEditBook.TabIndex = 4;
+            this.btnEditBook.Text = "Edit";
+            this.btnEditBook.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnEditBook.TextOffsetX = 10;
+            this.btnEditBook.Click += new System.EventHandler(this.btnEditBook_Click);
+            // 
+            // btnAddBook
+            // 
+            this.btnAddBook.AnimationHoverSpeed = 0.07F;
+            this.btnAddBook.AnimationSpeed = 0.03F;
+            this.btnAddBook.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddBook.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnAddBook.BorderColor = System.Drawing.Color.Black;
+            this.btnAddBook.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnAddBook.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnAddBook.CheckedForeColor = System.Drawing.Color.White;
+            this.btnAddBook.CheckedImage = null;
+            this.btnAddBook.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnAddBook.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAddBook.FocusedColor = System.Drawing.Color.Empty;
+            this.btnAddBook.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddBook.ForeColor = System.Drawing.Color.White;
+            this.btnAddBook.Image = ((System.Drawing.Image)(resources.GetObject("btnAddBook.Image")));
+            this.btnAddBook.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnAddBook.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnAddBook.Location = new System.Drawing.Point(680, 9);
+            this.btnAddBook.Name = "btnAddBook";
+            this.btnAddBook.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnAddBook.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAddBook.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnAddBook.OnHoverImage = null;
+            this.btnAddBook.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnAddBook.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAddBook.OnPressedDepth = 0;
+            this.btnAddBook.Radius = 10;
+            this.btnAddBook.Size = new System.Drawing.Size(99, 34);
+            this.btnAddBook.TabIndex = 3;
+            this.btnAddBook.Text = "Add";
+            this.btnAddBook.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnAddBook.TextOffsetX = 15;
+            this.btnAddBook.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnSearchBook
+            // 
+            this.btnSearchBook.AnimationHoverSpeed = 0.07F;
+            this.btnSearchBook.AnimationSpeed = 0.03F;
+            this.btnSearchBook.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearchBook.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnSearchBook.BorderColor = System.Drawing.Color.Black;
+            this.btnSearchBook.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnSearchBook.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnSearchBook.CheckedForeColor = System.Drawing.Color.White;
+            this.btnSearchBook.CheckedImage = null;
+            this.btnSearchBook.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnSearchBook.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSearchBook.FocusedColor = System.Drawing.Color.Empty;
+            this.btnSearchBook.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchBook.ForeColor = System.Drawing.Color.White;
+            this.btnSearchBook.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchBook.Image")));
+            this.btnSearchBook.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnSearchBook.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnSearchBook.Location = new System.Drawing.Point(553, 9);
+            this.btnSearchBook.Name = "btnSearchBook";
+            this.btnSearchBook.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnSearchBook.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSearchBook.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnSearchBook.OnHoverImage = null;
+            this.btnSearchBook.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnSearchBook.OnPressedColor = System.Drawing.Color.Black;
+            this.btnSearchBook.OnPressedDepth = 0;
+            this.btnSearchBook.Radius = 10;
+            this.btnSearchBook.Size = new System.Drawing.Size(99, 34);
+            this.btnSearchBook.TabIndex = 2;
+            this.btnSearchBook.Text = "Search";
+            this.btnSearchBook.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnSearchBook.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // gunaPictureBox2
             // 
@@ -421,6 +459,7 @@
             this.txbSearch.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txbSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSearch.LineColor = System.Drawing.Color.Gainsboro;
+            this.txbSearch.LineSize = 2;
             this.txbSearch.Location = new System.Drawing.Point(86, 9);
             this.txbSearch.Name = "txbSearch";
             this.txbSearch.PasswordChar = '\0';
@@ -466,43 +505,9 @@
             this.gunaLabel3.TabIndex = 0;
             this.gunaLabel3.Text = "Edit";
             // 
-            // btnAdd
-            // 
-            this.btnAdd.AnimationHoverSpeed = 0.07F;
-            this.btnAdd.AnimationSpeed = 0.03F;
-            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdd.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnAdd.BorderColor = System.Drawing.Color.Black;
-            this.btnAdd.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnAdd.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnAdd.CheckedForeColor = System.Drawing.Color.White;
-            this.btnAdd.CheckedImage = null;
-            this.btnAdd.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAdd.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Image = null;
-            this.btnAdd.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAdd.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnAdd.Location = new System.Drawing.Point(689, 9);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnAdd.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnAdd.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnAdd.OnHoverImage = null;
-            this.btnAdd.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnAdd.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAdd.OnPressedDepth = 0;
-            this.btnAdd.Radius = 10;
-            this.btnAdd.Size = new System.Drawing.Size(114, 34);
-            this.btnAdd.TabIndex = 3;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // fMain
             // 
+            this.AcceptButton = this.btnSearchBook;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 646);
@@ -540,7 +545,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnShowSearch;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaAdvenceButton btnPeople;
-        private Guna.UI.WinForms.GunaAdvenceButton btnEdit;
         private Guna.UI.WinForms.GunaPanel gunaPanel3;
         private Guna.UI.WinForms.GunaPanel pnlMain;
         private Guna.UI.WinForms.GunaPanel pnlSearch;
@@ -549,12 +553,13 @@
         private Guna.UI.WinForms.GunaPanel pnlEdit;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaPanel gunaPanel4;
-        private Guna.UI.WinForms.GunaAdvenceButton btnSearch;
+        private Guna.UI.WinForms.GunaAdvenceButton btnSearchBook;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
         private Guna.UI.WinForms.GunaDataGridView dtgvBook;
         private Guna.UI.WinForms.GunaAdvenceButton btnLogout;
         private Guna.UI.WinForms.GunaLineTextBox txbSearch;
         private Guna.UI.WinForms.GunaLabel lbName;
-        private Guna.UI.WinForms.GunaAdvenceButton btnAdd;
+        private Guna.UI.WinForms.GunaAdvenceButton btnAddBook;
+        private Guna.UI.WinForms.GunaAdvenceButton btnEditBook;
     }
 }

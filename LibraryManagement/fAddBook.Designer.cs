@@ -1,6 +1,6 @@
 ﻿namespace LibraryManagement
 {
-    partial class fAdd
+    partial class fAddBook
     {
         /// <summary>
         /// Required designer variable.
@@ -311,13 +311,14 @@
             this.gunaLabel2.TabIndex = 0;
             this.gunaLabel2.Text = "Title:";
             // 
-            // fAdd
+            // fAddBook
             // 
+            this.AcceptButton = this.btnAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 412);
             this.Controls.Add(this.gunaPanel1);
-            this.Name = "fAdd";
+            this.Name = "fAddBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add book";
             this.gunaPanel1.ResumeLayout(false);

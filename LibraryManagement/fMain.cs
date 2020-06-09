@@ -1,4 +1,6 @@
 ﻿using LibraryManagement.DAO;
+using LibraryManagement.DTO;
+using QuanLiQuanCafe.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,8 +37,18 @@ namespace LibraryManagement
 
         void LoadAddForm()
         {
-            fAdd fAdd = new fAdd();
+            fAddBook fAdd = new fAddBook();
             fAdd.ShowDialog();
+            LoadListBook();
+        }
+
+        void LoadEditForm()
+        {
+            var row = (dtgvBook.SelectedCells[0].OwningRow.DataBoundItem as DataRowView).Row;
+            Book book = new Book(row);
+
+            fEditBook fEditBook = new fEditBook(book);
+            fEditBook.ShowDialog();
             LoadListBook();
         }
 
@@ -65,6 +77,12 @@ namespace LibraryManagement
             LoadAddForm();
         }
 
+        private void btnEditBook_Click(object sender, EventArgs e)
+        {
+            LoadEditForm();
+        }
+
         #endregion
+
     }
 }

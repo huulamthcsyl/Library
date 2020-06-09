@@ -84,7 +84,7 @@
             this.txbPassword.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbPassword.HoverState.Parent = this.txbPassword;
-            this.txbPassword.Location = new System.Drawing.Point(164, 113);
+            this.txbPassword.Location = new System.Drawing.Point(123, 113);
             this.txbPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.PasswordChar = '\0';
@@ -92,7 +92,7 @@
             this.txbPassword.SelectedText = "";
             this.txbPassword.SelectionStart = 1;
             this.txbPassword.ShadowDecoration.Parent = this.txbPassword;
-            this.txbPassword.Size = new System.Drawing.Size(200, 27);
+            this.txbPassword.Size = new System.Drawing.Size(241, 27);
             this.txbPassword.TabIndex = 2;
             this.txbPassword.UseSystemPasswordChar = true;
             // 
@@ -120,7 +120,7 @@
             this.txbUsername.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbUsername.HoverState.Parent = this.txbUsername;
-            this.txbUsername.Location = new System.Drawing.Point(164, 69);
+            this.txbUsername.Location = new System.Drawing.Point(123, 69);
             this.txbUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.PasswordChar = '\0';
@@ -128,7 +128,7 @@
             this.txbUsername.SelectedText = "";
             this.txbUsername.SelectionStart = 3;
             this.txbUsername.ShadowDecoration.Parent = this.txbUsername;
-            this.txbUsername.Size = new System.Drawing.Size(200, 27);
+            this.txbUsername.Size = new System.Drawing.Size(241, 27);
             this.txbUsername.TabIndex = 1;
             // 
             // guna2HtmlLabel2

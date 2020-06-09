@@ -22,32 +22,12 @@ CREATE TABLE Account(
 )
 GO
 
-SELECT Title AS [Tên sách], Author AS [Tác giả], Category AS [Thể loại], ReleaseDate AS [Ngày phát hành], Publisher AS [Nhà xuất bản] FROM dbo.Book
-GO
-
-INSERT dbo.Account
-(
-    Username,
-    DisplayName,
-    Password
-)
-VALUES
-(   'Lam',  -- Username - char(100)
-    N'Lâm', -- DisplayName - nchar(200)
-    N'1'  -- Password - nvarchar(200)
-    )
-GO
-
 CREATE PROC USP_Login
 @username CHAR(100), @password NVARCHAR(200)
 AS
 BEGIN
 	SELECT * FROM dbo.Account WHERE Username = @username AND Password = @password
 END
-GO
-
-EXEC dbo.USP_Login @username = 'Lam', -- char(100)
-                   @password = N'1' -- nvarchar(200)
 GO
 
 CREATE FUNCTION [dbo].[GetUnsignString](@strInput NVARCHAR(4000)) 
@@ -90,10 +70,6 @@ BEGIN
 END
 GO
 
-SELECT * FROM dbo.Book WHERE dbo.GetUnsignString(Title) LIKE N'%' + dbo.GetUnsignString(N'm') + N'%'
-SELECT * FROM dbo.Book WHERE dbo.GetUnsignString(Title) LIKE N'%n%'
-GO
-
 CREATE PROC USP_AddBook
 @title NVARCHAR(200), @author NVARCHAR(100), @category NVARCHAR(100), @releaseDate DATE, @pubilsher NVARCHAR(200)
 AS
@@ -113,5 +89,29 @@ BEGIN
 	    @releaseDate, -- ReleaseDate - date
 	    @pubilsher        -- Publisher - nvarchar(200)
 	    )
+END
+GO
+
+ALTER PROC USP_SearchBook
+@title NVARCHAR(200)
+AS
+BEGIN
+	SELECT Title, Author, Category, ReleaseDate AS [Release Date], Publisher FROM dbo.Book WHERE dbo.GetUnsignString(Title) LIKE N'%' + dbo.GetUnsignString(@title) + N'%'
+END
+GO
+
+CREATE PROC USP_GetIDBook
+@title NVARCHAR(200), @author NVARCHAR(100), @releaseDate DATE, @pubilsher NVARCHAR(200)
+AS
+BEGIN
+	SELECT ID FROM dbo.Book WHERE Title = @title AND Author = @author AND Publisher = @pubilsher AND ReleaseDate = @releaseDate
+END
+GO
+
+CREATE PROC USP_EditBook
+@title NVARCHAR(200), @author NVARCHAR(100), @category NVARCHAR(100), @releaseDate DATE, @pubilsher NVARCHAR(200), @id INT
+AS
+BEGIN
+	UPDATE dbo.Book SET Title = @title, Author = @author, Category = @category, ReleaseDate = @releaseDate, Publisher = @pubilsher WHERE id = @id
 END
 GO

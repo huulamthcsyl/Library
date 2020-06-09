@@ -11,17 +11,17 @@ namespace LibraryManagement.DTO
     {
         private string title;
         private string author;
-        private DateTime? releaseDate;
+        private DateTime releaseDate;
         private string category;
         private string pubilsher;
 
         public string Title { get => title; set => title = value; }
         public string Author { get => author; set => author = value; }
-        public DateTime? ReleaseDate { get => releaseDate; set => releaseDate = value; }
+        public DateTime ReleaseDate { get => releaseDate; set => releaseDate = value; }
         public string Category { get => category; set => category = value; }
         public string Pubilsher { get => pubilsher; set => pubilsher = value; }
 
-        public Book(string title, string author, string category, DateTime? releaseDate, string pubilsher)
+        public Book(string title, string author, string category, DateTime releaseDate, string pubilsher)
         {
             this.title = title;
             this.Author = author;
@@ -32,13 +32,13 @@ namespace LibraryManagement.DTO
 
         public Book(DataRow row)
         {
-            this.Title = row["name"].ToString();
+            this.Title = row["title"].ToString();
             this.Author = row["author"].ToString();
             this.Category = row["category"].ToString();
-            var releaseDateTemp = row["releaseDate"];
+            var releaseDateTemp = row["release Date"];
             if(releaseDateTemp != null)
             {
-                releaseDate = (DateTime?)releaseDateTemp;
+                releaseDate = (DateTime)releaseDateTemp;
             }
             this.Pubilsher = row["publisher"].ToString();
         }

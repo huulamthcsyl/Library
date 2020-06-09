@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace LibraryManagement
 {
-    public partial class fAdd : Form
+    public partial class fAddBook : Form
     {
-        public fAdd()
+        public fAddBook()
         {
             InitializeComponent();
         }
@@ -41,12 +41,16 @@ namespace LibraryManagement
 
             if (title == "" || author == "" || category == "" || publisher == "")
             {
-                MessageBox.Show("Please fill all informations");
+                MessageBox.Show("Please fill all informations", "Warning");
             }
             else
             {
-                BookDAO.Instance.AddBook(title, author, category, releaseDate, publisher);
-                Clear();              
+                if (MessageBox.Show("Do you want to add this book to library?", "Confirm", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    BookDAO.Instance.AddBook(title, author, category, releaseDate, publisher);
+                    MessageBox.Show("Add book successful!", "Information");
+                    Clear();
+                }
             }
         }
     }
