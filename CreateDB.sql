@@ -22,6 +22,15 @@ CREATE TABLE Account(
 )
 GO
 
+CREATE TABLE UserAcc(
+	ID INT IDENTITY PRIMARY KEY,
+	Name NVARCHAR(200),
+	Age INT,
+	PhoneNumber NCHAR(20),
+	Address NVARCHAR(200)
+)
+GO
+
 CREATE PROC USP_Login
 @username CHAR(100), @password NVARCHAR(200)
 AS
@@ -115,3 +124,48 @@ BEGIN
 	UPDATE dbo.Book SET Title = @title, Author = @author, Category = @category, ReleaseDate = @releaseDate, Publisher = @pubilsher WHERE id = @id
 END
 GO
+
+INSERT dbo.UserAcc
+(
+    Name,
+    Age,
+    PhoneNumber,
+    Address
+)
+VALUES
+(   N'Nguyễn Hữu Lâm', -- Name - nvarchar(200)
+    17,   -- Age - int
+    N'11111', -- PhoneNumber - nchar(20)
+    N'VP'  -- Address - nvarchar(200)
+    )
+GO 
+
+ALTER PROC USP_SearchUser
+@name NVARCHAR(200)
+AS
+BEGIN
+	SELECT Name AS [Name], Age AS [Age], PhoneNumber AS [Phone number], Address AS [Address] FROM dbo.UserAcc WHERE dbo.GetUnsignString(Name) LIKE N'%' + dbo.GetUnsignString(@name) + N'%'
+END
+GO	
+
+CREATE PROC USP_AddUser
+@name NVARCHAR(200), @age INT, @phoneNumber NCHAR(20), @address NVARCHAR(200)
+AS
+BEGIN
+	INSERT dbo.UserAcc
+	(
+	    Name,
+	    Age,
+	    PhoneNumber,
+	    Address
+	)
+	VALUES
+	(   @name, -- Name - nvarchar(200)
+	    @age,   -- Age - int
+	    @phoneNumber, -- PhoneNumber - nchar(20)
+	    @address  -- Address - nvarchar(200)
+	    )
+END
+GO
+
+

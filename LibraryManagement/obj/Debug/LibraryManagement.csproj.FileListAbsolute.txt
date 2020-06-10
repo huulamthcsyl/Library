@@ -14,3 +14,4 @@ E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.ex
 E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.pdb
 E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.fAddBook.resources
 E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.fEditBook.resources
+E:\C#\WinForm\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.fAddUser.resources

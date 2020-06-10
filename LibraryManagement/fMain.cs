@@ -1,5 +1,6 @@
 ﻿using LibraryManagement.DAO;
 using LibraryManagement.DTO;
+using Microsoft.VisualBasic.ApplicationServices;
 using QuanLiQuanCafe.DAO;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace LibraryManagement
         {
             InitializeComponent();
 
-            LoadListBook();       
+            LoadListBook();
         }
 
         #region METHODS
@@ -31,18 +32,18 @@ namespace LibraryManagement
 
         void LoadListBookByTitle()
         {
-            string title = txbSearch.Text;
+            string title = txbSearchBook.Text;
             dtgvBook.DataSource = BookDAO.Instance.GetListBookByTitle(title);
         }
 
-        void LoadAddForm()
+        void LoadAddBookForm()
         {
             fAddBook fAdd = new fAddBook();
             fAdd.ShowDialog();
             LoadListBook();
         }
 
-        void LoadEditForm()
+        void LoadEditBookForm()
         {
             var row = (dtgvBook.SelectedCells[0].OwningRow.DataBoundItem as DataRowView).Row;
             Book book = new Book(row);
@@ -52,37 +53,70 @@ namespace LibraryManagement
             LoadListBook();
         }
 
+        void LoadListUser()
+        {
+            dtgvUser.DataSource = UserDAO.Instance.GetListUser();
+        }
+
+        void LoadListUserByName()
+        {
+            string userName = txbSearchUser.Text;
+            dtgvUser.DataSource = UserDAO.Instance.GetListUserByName(userName);
+        }
+
+        void LoadAddUserForm()
+        {
+            fAddUser fAddUser = new fAddUser();
+            fAddUser.ShowDialog();
+            LoadListUser();
+        }
+
         #endregion
 
         #region EVENTS
-
-        private void fMain_Load(object sender, EventArgs e)
-        {
-            Guna.UI.Lib.GraphicsHelper.DrawLineShadow(pnlMain, Color.Black, 20, 5, Guna.UI.WinForms.VerHorAlign.HoriziontalTop);
-        }
-
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void btnSearchBook_Click(object sender, EventArgs e)
         {
             LoadListBookByTitle();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnAddBook_Click(object sender, EventArgs e)
         {
-            LoadAddForm();
+            LoadAddBookForm();
         }
 
         private void btnEditBook_Click(object sender, EventArgs e)
         {
-            LoadEditForm();
+            LoadEditBookForm();
+        }
+
+        private void btnShowSearch_Click(object sender, EventArgs e)
+        {
+            pnlSearch.BringToFront();
+            LoadListBook();
+        }
+
+        private void btnShowUser_Click(object sender, EventArgs e)
+        {
+            pnlUser.BringToFront();
+            LoadListUser();
+        }
+
+        private void btnSearchUser_Click(object sender, EventArgs e)
+        {
+            LoadListUserByName();
+        }
+
+        private void btnAddUser_Click(object sender, EventArgs e)
+        {
+            LoadAddUserForm();
         }
 
         #endregion
-
     }
 }
